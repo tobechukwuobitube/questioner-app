@@ -305,3 +305,62 @@ font-size: 0.8em;
 	background-color: #00897B;
 	color: #ffffff;
 }
+
+/* --- QUESTION ---- */
+
+#question {
+	height: 100vh;
+	color: #fff;
+	background: rgb(244, 244, 244);
+}	
+
+.ask-input {
+	width: 60%;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+.question-input,
+.ask-btn {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+.question-input {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.ask-btn {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.question-asked p {
+	line-height: 1.2em;
+	color: #000;
+	padding: 15px 10px;
+	font-weight: 600;
+}
+
+.counter {
+
+	font-weight: 600;
+	text-align: center;
+}
+
+/* --- ADMIN --- */
+
+.create-meetup {
+	width: fit-content;
+}
+
+.create-meetup p {
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding: 30px;
+	padding-left: 0;
+}
