@@ -1,0 +1,25 @@
+{
+  "name": "questioner-server",
+  "version": "1.0.0",
+  "description": "Node.js backend server for a Crowd-source Questioner Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobechukwuobitube/questioner-app.git"
+  },
+  "keywords": [
+    "Questioner",
+    "Meetup",
+    "Questions",
+    "Bootcamp"
+  ],
+  "author": "Tobechukwu Obitube",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobechukwuobitube/questioner-app/issues"
+  },
+  "homepage": "https://github.com/tobechukwuobitube/questioner-app#readme"
+}
