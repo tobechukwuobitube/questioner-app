@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const questions = [];
-let id = 1;
+let id = 0;
 
 router.get("/api/v1/questions", (req, res) => {
   return res.json({questions});
@@ -17,8 +17,8 @@ router.get("/api/v1/questions/:id", (req, res) => {
 router.post("/api/v1/questions", (req, res) => {
   questions.push({
     id: ++id,
-    createdOn: 10/10/2000,
-    createdBy: req.body.user,
+    createdOn: Date.now(),
+    createdBy: req.body.userId,
     meetup: req.body.meetup,
     title: req.body.title,
     body: req.body.body,
@@ -26,7 +26,7 @@ router.post("/api/v1/questions", (req, res) => {
   });
   return res.json({ 
     status: 200,
-    message: "Successfully created" 
+    message: "Successfully created",
   });
 });
 

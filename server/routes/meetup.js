@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const meetups = [];
-let id = 1;
+let id = 0;
 
 router.post("/api/v1/meetups", (req, res) => {
   meetups.push({
