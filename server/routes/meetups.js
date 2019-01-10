@@ -21,7 +21,7 @@ router.get('/:meetupId', (req, res, next) => {
     });
   } else {
     res.status(200).json({
-      message: 'You passed an ID'
+      message: 'You returned a special passed an ID'
     })
   }
 });

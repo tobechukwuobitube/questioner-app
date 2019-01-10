@@ -5,6 +5,6 @@ const app = express();
 
 const meetupsRoutes = require('./routes/meetups');
 
-app.use('/meetups', meetupsRoutes);
+app.use('./meetups', meetupsRoutes);
 
 module.exports = app;
