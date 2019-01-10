@@ -10,7 +10,7 @@ router.post("/api/v1/meetups", (req, res) => {
     id: ++id,
     createdOn: Date.now(),
     locaton: req.body.location,
-    images: ["image1", "image2"],
+    images: ["image1.png", "image2,png"],
     topic: req.body.topic,
     happeningOn: 10/10/2019,
     tags: req.body.tags
