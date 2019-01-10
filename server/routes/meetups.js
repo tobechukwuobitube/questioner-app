@@ -1,40 +1,53 @@
-const express = require('express');
+const express = require("express");
+
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
-  res.status(200).json({
-    message: 'Handling GET requests to /meetups'
-  })
+const meetups = [];
+let id = 1;
+
+router.post("/api/v1/meetups", (req, res) => {
+  meetups.push({
+    id: ++id,
+    createdOn: Date.now(),
+    locaton: req.body.location,
+    images: ["image1", "image2"],
+    topic: req.body.topic,
+    happeningOn: 10/10/2019,
+    tags: req.body.tags
+  });
+  return res.json({ message: "Created" });
 });
 
-router.post('/', (req, res, next) => {
-  res.status(200).json({
-    message: 'Handling POST request to /meetups'
+router.get("/api/v1/meetups/:id", (req, res) => {
+  const meetup = meetups.find(val => val.id === Number(req.params.id));
+  return res.json({meetup});
+});
+
+router.get("/api/v1/meetups", (req, res) => {
+  return res.json({
+    status: 200,
+    meetups
   });
 });
 
-router.get('/:meetupId', (req, res, next) => {
-  const id = req.params.meetupId;
-  if (id === 'special') {
-    res.status(200).json({
-      id: id
-    });
-  } else {
-    res.status(200).json({
-      message: 'You returned a special passed an ID'
-    })
-  }
-});
-
-router.patch('/:meetupId', (req, res, next) => {
-  res.status(200).json({
-    message: 'Updated meetup!'
+router.post("/api/v1/meetups/:id/rsvps", (req, res) => {
+  return res.json({
+    status: 200,
+    id: res.body.id,
+    meetup: res.body.meetupId,
+    user: res.body.userId,
+    response: res.body.response,
+    message: "RSVP created successfully"
   });
 });
 
-router.patch('/:meetupId', (req, res, next) => {
-  res.status(200).json({
-    message: 'Deleted meetup!'
+router.delete("/api/v1/meetups/:id", (req, res) => {
+  const meetupIndex = meetups.findIndex(val => val.id === Number(req.param.id));
+  meetups.splice(meetupIndex, 1);
+  return res.json({ 
+    status: 200,
+    message: "Deleted",
+    meetups
   });
 });
 
