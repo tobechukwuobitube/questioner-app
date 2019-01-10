@@ -32,14 +32,22 @@ router.post("/api/v1/questions", (req, res) => {
 
 router.patch("/api/v1/questions/:id/upvote", (req, res) => {
   const question = questions.find(val => val.id === Number(req.params.id));
-  question.name = req.body.name;
-  return res.json({ message: "Updated" });
+  question.votes += 1;
+  return res.json({ 
+    status: 200, 
+    message: "upvote Succesful", 
+    question
+  });
 });
 
 router.patch("/api/v1/questions/:id/downvote", (req, res) => {
   const question = questions.find(val => val.id === Number(req.params.id));
-  question.name = req.body.name;
-  return res.json({ message: "Updated" });
+  question.votes -= 1;
+  return res.json({ 
+    status: 200, 
+    message: "downvote Succesful", 
+    question 
+  });
 });
 
 router.delete("/api/v1/questions/:id", (req, res) => {
