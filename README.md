@@ -45,13 +45,13 @@ https://sendit-it.herokuapp.com/
 
 To clone this repository: 
 
-* Ensure you have git installed
+* Ensure you have git and node.js installed 
 
 * git clone https://github.com/tobechukwuobitube/questioner-app.git
 
-* Run npm install
+* Run 'npm install'
 
-* Run npm start to start the server
+* Run 'node app.js' to start the server
 
 * Follow the UI directory to view UI pages
 
