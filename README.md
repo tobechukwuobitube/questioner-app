@@ -24,7 +24,7 @@ https://tobechukwuobitube.github.io/questioner-app/
 
 ## Link to API endpoints 
 
-https://sendit-it.herokuapp.com/
+
 
 
 ## API endpoints
