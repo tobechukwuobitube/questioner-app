@@ -27,33 +27,10 @@
   </header>
   </div>
   <main>
-    <section id="question">
-      <div class="container post-question">
-          <h2 class="section-heading ask-question">Ask your Question:</h2>
-          <div class="col-12 ask-input">
-            <textarea class="col-10 question-input" placeholder="Ask a Question"></textarea>
-            <input class="col-2 btn btn2 ask-btn" type="button" value="Ask">
-          </div>
-          <div>
-            <h2 class="trending section-heading">Trending Questions:</h2>
-            <div class="col-12 ask-input">
-              <div class="col-7 question-asked">
-                <p>What is Web Development with Node.js</p>
-              </div>
-              <div class="col-5 vote">
-                <button class="col-2 counter btn2 btn ask-btn" type="button"><p>Vote Up</p></button>
-              <input class="col-1 counter" type="text" value="0">
-              <button class="col-2 counter btn2 btn ask-btn" type="button"><p>Vote down</p></button>
-              </div>
-              
-            </div>
-        </div>
-      </div>
-    </section>
     <section >
-      <div id="question">
+      <div id="create-meetup">
         <div class="container">
-            <h2 class="section-heading">Upcoming meetups:</h2>
+          <h2 class="section-heading"><a href="#meetup-form" class="btn2 ask-action-btn">Create Meetup</a></h2>
           <div class="col-12 meetups">
             <div  class="col-4 meetup-item">
               <div class="meetup-details">
@@ -78,7 +55,7 @@
                 <input type="radio" name="yes" id="yes">No
                 <input type="radio" name="yes" id="yes">May be
                 </fieldset>
-                <p><a href="#question" class="btn">Delete</a></p>
+                <p><a href="question.html" class="btn2 ask-acition-btn">Delete</a></p>
               </div>
             </div>
             <div  class="col-4 meetup-item">
@@ -104,13 +81,52 @@
                 <input type="radio" name="yes" id="yes">No
                 <input type="radio" name="yes" id="yes">May be
                 </fieldset>
-                <p><a href="#question" class="btn">Delete</a></p>
+                <p><a href="question.html" class="btn2 ask-acition-btn">Delete</a></p>
+              </div>
+            </div>
+            <div  class="col-4 meetup-item">
+              <div class="meetup-details">
+                <h4>Node.js Meetup</h4>
+                <table>
+                  <tr>
+                    <td>Date:</td>
+                    <td>7th Jan. 2019</td>
+                  </tr>
+                  <tr>
+                    <td>Time:</td>
+                    <td>10am</td>
+                  </tr>
+                  <tr>
+                    <td>Venue:</td>
+                    <td>Epic Tower</td>
+                  </tr>
+                </table>
+                <fieldset> 
+                <legend>Attending?</legend>
+                <input type="radio" name="yes" id="yes">Yes
+                <input type="radio" name="yes" id="yes">No
+                <input type="radio" name="yes" id="yes">May be
+                </fieldset>
+                <p><a href="question.html" class="btn2 ask-acition-btn">Delete</a></p>
               </div>
             </div>
           </div>
-          <div class="create-meetup">
-              <h2 class="section-heading">Create a meetup:</h2>
-              <p><a href="#question" class="btn create-btn">Create a Meetup</a></p>
+        </div>
+      </div>
+    </section>
+    <section >
+      <div id="signup">
+        <div class="container">
+          <div class="form-container">
+            <div class="form">
+              <form id="meetup-form">
+                <input class="form-input " type="text" name="firstname" id="firstname" placeholder="Location"><br>
+                <input class="form-input " type="text" name="lastname" id="lastname" placeholder="Topic"><br>
+                <input class="form-input " type="email" name="email" id="signup-email" placeholder="Tags"><br>
+              
+                <input class="btn btn-form-submit" type="submit" name="submit" id="signup-submit" value="Create Meetup">
+              </form>
+            </div>
           </div>
         </div>
       </div>
