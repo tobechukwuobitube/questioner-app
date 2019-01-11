@@ -446,8 +446,12 @@ font-size: 0.8em;
 
 /* --- CREATE MEETUP --- */
 
- {
-	font-size: 0.5em;
+.create-meetup {
+	height: 300px;
+}
+
+.create-meetup btn2 {
+	font-size: 0.2em;
 }
 
 
@@ -725,6 +729,12 @@ font-size: 0.8em;
 		width: 32%;
 		font-size: 0.8em;
 		height: 50px;
+	}
+
+	/* --- CREATE-MEETUP */
+
+	.create-meetup btn2 {
+		font-size: 16px;
 	}
 
 }
