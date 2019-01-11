@@ -4,9 +4,9 @@
   "description": "Node.js backend server for a Crowd-source Questioner Application",
   "main": "app.js",
   "scripts": {
-    "test": "mocha \"./server/test/*.spec.js*\" --exit", 
+    "test": "mocha \"./server/test/*.spec.js*\" --exit",
     "lint": "eslint app.js",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
