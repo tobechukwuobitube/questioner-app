@@ -444,16 +444,6 @@ font-size: 0.8em;
 	border: 2px solid #00897B;
 }
 
-/* --- CREATE MEETUP --- */
-
-.create-meetup {
-	height: 300px;
-}
-
-.create-meetup btn2 {
-	font-size: 0.2em;
-}
-
 
 
 /* --- MEDIA QUERIES --- */
@@ -731,10 +721,8 @@ font-size: 0.8em;
 		height: 50px;
 	}
 
-	/* --- CREATE-MEETUP */
-
-	.create-meetup btn2 {
-		font-size: 16px;
+	#create-meetup a {
+		font-size: 20px;
 	}
 
 }
