@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha \"./server/test/*.spec.js*\" --exit", 
-    "lint": "eslint app.js"
+    "lint": "eslint app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
