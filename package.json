@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha \"./server/test/*.spec.js*\" --exit",
     "lint": "eslint app.js",
-    "start": "nodemon app.js"
+    "start": "nodemon ./server/app.js"
   },
   "repository": {
     "type": "git",
