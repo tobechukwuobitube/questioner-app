@@ -16,7 +16,7 @@ app.use(userRoutes);
 
 app.get("/", (req, res) => { return res.json('Start with /users files') });
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log('Server is listening on port 3000');
 });
 
